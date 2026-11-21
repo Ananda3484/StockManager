@@ -42,7 +42,7 @@ VALUES ('admin',
 
 INSERT INTO produto (nome, marca, preco, tipo, quantidade, estoque_minimo) VALUES
     ('Leite Integral 1L', 'Italac',  5.49, 'P', 10, 5),
-    ('Arroz 5kg',         'Tio JoÃ£o', 28.90, 'N', 40, 10);
+    ('Arroz 5kg',         'Tio João', 28.90, 'N', 40, 10);
 
 INSERT INTO lote (produto_id, numero, validade, quantidade)
 SELECT id, 'L1', DATE_ADD(CURDATE(), INTERVAL 3 DAY), 5 FROM produto WHERE nome = 'Leite Integral 1L';
